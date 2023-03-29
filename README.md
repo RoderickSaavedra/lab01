@@ -30,6 +30,8 @@ Para comparar una versión especifica del archivo con la versión actual.
 #Creacion de ramas
 	-- git branch <archivo>
 se utiliza para crear una rama historica.
+	-- git checkout -b <nombre>
+crea una rama desde el punto en donde estas 
 
 #Moverse entre ramas
 	-- git checkout <nombre de la rama>
@@ -39,6 +41,14 @@ para viajar de una rama a otra, del punto A al punto B
 	-- git merge <nombre de la rama>
 para fusionar dos ramas en una.
 
+#Revertir cambios
+	-- git revert <id commit> 
+te coloca en un punto de la historia de la misma rama y te conserva todos los commit adelantes de esa rama.
+	-- git reset <id commit> 
+te coloca en un punto de la historia de la misma rama y asume que los commit que estén por delante de 
+tu posición no existen.
+	--soft   reset only HEAD
+	--hard                reset HEAD, index and working tree
 #Repositorio remoto
 Lugar en donde podemos subir nuestro repositorio para que otros puedan descargarlo y modificarlos.
 Estos repositorios pueden ser privados para solo trabajar con un grupo de personas o publicos para trabajar
@@ -54,3 +64,4 @@ automatica. git conulta los anteriores commit para conocer que linea de codigo h
 resolver el conflito por automaticamente. En caso de que git no tenga forma de conocer que linea fue priemro,
 entonces qeu git solicitara que el desarrollador que realice la correcion de forma manual, para despues realizar
 el merge.
+
