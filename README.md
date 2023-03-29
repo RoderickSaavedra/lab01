@@ -65,3 +65,19 @@ resolver el conflito por automaticamente. En caso de que git no tenga forma de c
 entonces qeu git solicitara que el desarrollador que realice la correcion de forma manual, para despues realizar
 el merge.
 
+#Conexion de local al remoto
+	-- git remote add origin <URL>
+Agregamos la direccion de nuestro repositorio remoto. 
+Si utilizamos la ssh para conectar con github debemos de crear una llaver ssh
+Si utilizamos http para conectar con github debemos crear un token de acceso, el cual utilizaremos como contraseña
+
+	-- git remote get-url origin
+Muestra la direccion de origen de nuestro directorio remoto
+
+	-- git remote remove origin
+Remueve la direccion de origen de nuestro directorio remoto
+
+	-- git push -u origin main
+Sube al directorio remoto (github) 
+
+
