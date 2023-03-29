@@ -21,26 +21,23 @@ Es donde se guardan los archivos en nuestra maquina local
 De color rojo estaran los archivos que estes el el staging area
 y de azul los archivo que este agregados con git add.
 
-#Creación de ramas
-	-- git dif <archivo>
+#Comparar archivos 
+	-- git diff <archivo>
  Muestra las diferencias entre un archivo y otro
 	--git diif <hash><archivo>
 Para comparar una versión especifica del archivo con la versión actual.
 
+#Creacion de ramas
+	-- git branch <archivo>
+se utiliza para crear una rama historica.
 
-Para esta parte del laboratorio he utilizado 2 comandos
-El primer comando que utilice fue "git init" para iniciar el directorio como repositorio
-El segundo comando utilizado fue "git branch -m lab/01" para nombrar la rama principal como lab/01 en vez de master,
-para esto fue necesario colocar -m
+#Moverse entre ramas
+	-- git checkout <nombre de la rama>
+para viajar de una rama a otra, del punto A al punto B
 
-nano README.md creacion del archivo .md
-git status comprobacion del estado del staging, el archivo esta en rojo
-git add README.md agrego el archivo
-git status muestra el estado del archivo, es verde
-git commit -m "mensaje" realice el primer commit
-nano README.md docuemente los cambios.
-
-git diff idCommit README.md muestra las comparaciones del README.md del HEAD y una version anterior.
+#Unir ramas
+	-- git merge <nombre de la rama>
+para fusionar dos ramas en una.
 
 #Repositorio remoto
 Lugar en donde podemos subir nuestro repositorio para que otros puedan descargarlo y modificarlos.
