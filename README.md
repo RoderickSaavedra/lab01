@@ -16,3 +16,13 @@ git commit -m "mensaje" realice el primer commit
 nano README.md docuemente los cambios.
 
 git diff idCommit README.md muestra las comparaciones del README.md del HEAD y una version anterior.
+
+#Repositorio remoto
+Lugar en donde podemos subir nuestro repositorio para que otros puedan descargarlo y modificarlos.
+Estos repositorios pueden ser privados para solo trabajar con un grupo de personas o publicos para trabajar
+con toda la comunidad.
+
+#Peticion de cambios pull request
+Es la forma de solicitar que un colaborador revise y aprube los cambios hecho por mi, antes de fusinarlos 
+con la rama principal del proyecto.
+
